@@ -1,560 +1,487 @@
 /*reset*/
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 
 /*estilos generales*/
 
 body {
-    display: grid;
-    grid-template-areas: 
-    'header header header '
-    'main main main'
-    'footer footer footer '
-    ;
-    background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-areas:
+    "header header header "
+    "main main main"
+    "footer footer footer ";
+  background-color: rgb(255, 255, 255);
 }
 
-.img{
-    height:100px;
-    width: 100px;
-    margin-left: 20px;
-    margin-top: 20px;
-     
-  
- }
+.logo-1 a .im-logo {
+  height: 50%;
+  width: 80%;
 
-.encabezados{
-    display: flex;
-    padding: 0;
-    width: auto;
-    height: auto;
-
-
-    justify-content: center;
-    align-content: start;
-   
+  margin-left: 20px;
+  margin-top: 10px;
 }
 
-.sub-titulos{
-    height: 100%;
-    width:100%;
-    display: grid;
-    color:rgb(40, 130, 233);
-    font-size: 1 rem;
-  
-  
+.encabezados {
+  display: flex;
+  padding: 0;
+  width: auto;
+  height: auto;
+
+  justify-content: center;
+  align-content: start;
 }
 
-    
-
-
+.sub-titulos {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  color: rgb(40, 130, 233);
+  font-size: 1 rem;
+}
 
 header {
-    display: grid;
-    grid-area: header ;
-    overflow: hidden;
-    height: 350px;
-    width: 100%;
-    
+  display: grid;
+  grid-area: header;
+  overflow: hidden;
+  height: 350px;
+  width: 100%;
 
-    background:url(../img/banner2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    
+  background: url(../img/banner2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.logo-1{
-display: flex;
-position: relative;
-height: 150px;
-overflow: hidden;
+.logo-1 {
+  display: flex;
+  position: relative;
+  height: 150px;
 
-
-flex-direction: row;
-position: relative;
-
+  flex-direction: row;
+  position: relative;
 }
 
-.logo-1 :hover{
-    transform: scale(1.3);
-    transition: 1s;
-    }
+.logo-1 :hover {
+  transform: scale(1.3);
+  transition: 1s;
+}
 
 /*items de la lista*/
- 
-.menu-1{
-    width: 100%;
-    height:100%;
-    position: relative;
-    display: flex;
-    
+
+.menu-1 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
 }
-nav{
-    display: flex;
-    align-content: end;
-   
+nav {
+  display: flex;
+  align-content: end;
 }
 
- ul{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 
+  list-style: none;
+  margin: 10px;
+  padding: 0;
 
-    list-style: none;
-    margin: 10px;
-    padding: 0;
-
-
-    gap: 2rem;
-    align-items: end;
- 
+  gap: 2rem;
+  align-items: end;
 }
 
-  li{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-   
-   
-    width: 100px;
-    height: 100px;
-    
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
+li {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 
-ul li a{
-    padding: 5px;
-    font-size: 1rem;
-    color: whitesmoke;
+  width: 100px;
+  height: 100px;
 
-    text-decoration: none
- }
-   
-
-.lista:hover{
-    background-color: chocolate;
-    clip-path: circle(50%);
-    transition-property: clip-path;
-
-    transition:1s;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
+ul li a {
+  padding: 5px;
+  font-size: 1rem;
+  color: whitesmoke;
 
+  text-decoration: none;
+}
+
+.lista:hover {
+  background-color: chocolate;
+  clip-path: circle(50%);
+  transition-property: clip-path;
+
+  transition: 1s;
+}
 
 main p {
-   position: relative;
+  position: relative;
 
-    font-size: 30px;
-    font-family: 'roboto slab';
+  font-size: 30px;
+  font-family: "roboto slab";
 }
 
 /*estilos de los iconos*/
 
-
-
-
-.fa-kit-medical{
+.fa-kit-medical {
   height: 1.3rem;
   color: #095c25;
-  
-   
 }
 
-.fa-suitcase-rolling{
-    height: 1.3rem;
-   
-    
+.fa-suitcase-rolling {
+  height: 1.3rem;
 }
 
-.fa-bolt{
-    height: 1.3rem;
-   
-     
-
+.fa-bolt {
+  height: 1.3rem;
 }
-.fa-tree-city{
-    height: 1.3rem;
-   
-     
-
+.fa-tree-city {
+  height: 1.3rem;
 }
 
-.fa-credit-card{
-    height: 1.3rem;
-    
-     
-
+.fa-credit-card {
+  height: 1.3rem;
 }
-.fa-plane{
-    height: 1.3rem;
-    
-     
-
+.fa-plane {
+  height: 1.3rem;
 }
 
 /*estilos del index*/
 
-main{
-    height: 600px;
-    position: relative;
-    display: grid;
-    grid-area: main;
+main {
+  height: 800px;
+  position: relative;
+  display: grid;
+  grid-area: main;
 }
 
-
-
 footer {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-area: footer;
+  margin-top: 50px;
+  background-color: rgb(215, 173, 253);
+  border-radius: 50px;
+}
+
+footer ul {
+  gap: 30px;
+  list-style: none;
+}
+footer div nav {
+  height: 100%;
+}
+/*estilos del main*/
+h1 {
+  font-size: 0.5rem;
+  color: midnightblue;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+h2 {
+  font-size: 0.5rem;
+  color: midnightblue;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.contenedor-2m h1 {
+  display: grid;
+  font-size: 2rem;
+  color: midnightblue;
+  margin: 10px;
+  grid-column: 1;
+  grid-row: 1;
+
+  text-align: center;
+}
+.contenedor-2m {
+  display: grid;
+  grid-template-rows: 0.5fr 1fr 1fr;
+  grid-template-columns: repeat(2, 50%);
+
+  justify-content: center;
+}
+.tar-j {
+  height: auto;
+  align-items: center;
+}
+.tar-j img {
+    height: auto;
+    width: 30%;
+    margin-top: 50px;
+   
+    grid-row: 1;
+  }
+
+.tar-jeta {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.sub-titulo {
+  height: auto;
+  width: auto;
+  display: grid;
+
+  grid-column: span 2;
+  grid-row: 1;
+}
+.ofertas-mas {
+  height: auto;
+  width: auto;
+  display: grid;
+
+  grid-row: 1;
+  grid-column: 2;
+}
+.elegidos {
+  height: auto;
+  width: auto;
+  display: grid;
+
+  grid-row: 1;
+  grid-column: 1;
+}
+
+/*estilos de img main*/
+
+.contenedor-2i {
+  display: grid;
+  grid-template-rows: 0.2 fr 1fr 1fr;
+  grid-template-columns: repeat(2, 50%);
+  margin-left: 50px;
+
+  align-content: center;
+  gap: 20px;
+}
+
+.brasil-morro {
+  height: 200px;
+  width: 300px;
+  display: grid;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50px;
+  box-shadow: 5px 1px 12px gray;
+
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.brasil-morro img {
+  height: 100%;
+  width: 100%;
+}
+.brasil-morro p {
+  font-size: 2rem;
+  color: white;
+  position: absolute;
+
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.brasil-morro:hover {
+  scale: 1.1;
+  transition: 1s;
+}
+
+.iguazu-cat {
+  height: 200px;
+  width: 300px;
+  display: grid;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50px;
+  box-shadow: 5px 1px 12px gray;
+
+  grid-row: 3;
+  grid-column: 2;
+}
+.iguazu-cat p {
+  font-size: 2rem;
+  color: white;
+  position: absolute;
+
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.iguazu-cat img {
+  height: 100%;
+  width: 100%;
+}
+.iguazu-cat :hover {
+  scale: 1.1;
+  transition: 1s;
+}
+
+.mexico-ceno {
+  height: 200px;
+  width: 300px;
+  display: grid;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50px;
+  box-shadow: 5px 1px 12px gray;
+
+  grid-row: 3;
+  grid-column: 1;
+}
+
+.mexico-ceno p {
+  font-size: 2rem;
+  color: white;
+  position: absolute;
+  transform: translate(20%, 20%);
+  text-shadow: 20px rgba(0, 0, 0, 0.8);
+}
+
+.mexico-ceno:hover {
+  scale: 1.1;
+  transition: 1s;
+}
+
+.mexico-ceno img {
+  height: 100%;
+  width: 100%;
+
+  border-radius: 50px;
+  box-shadow: 5px 8 px 12px grey;
+
+  grid-row: 3;
+  grid-column: 1;
+}
+
+.video-mexico:hover {
+  scale: 1.1;
+  transition: 1s;
+}
+.video-mexico {
+  display: grid;
+  height: 200px;
+  width: 300px;
+  position: relative;
+
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.video-mexico iframe {
+  border-radius: 50px;
+  box-shadow: 5px 8 px 12px grey;
+}
+
+/*estiilos p*/
+section p {
+  position: relative;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+}
+
+/*mq para pantallas de escritorio*/
+
+@media screen and (max-width: 1024px) {
+  body header {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  a {
+    padding: 5px;
+    font-size: 0.5rem;
+    color: whitesmoke;
+
+    text-decoration: none;
+  }
+  ul {
+    height: 50%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+
+    list-style: none;
+    margin: 5px;
+    padding: 0;
+
+    gap: 1rem;
+    align-items: end;
+  }
+  .lista:hover {
+    background-color: chocolate;
+    clip-path: circle(30%);
+    transition-property: clip-path;
+
+    transition: 1s;
+  }
+  .logo {
+    display: flex;
+    position: relative;
+    height: 100px;
+
+    flex-direction: row;
+    position: relative;
+  }
+
+  footer {
     height: 100%;
     display: grid;
     grid-area: footer;
     margin-top: 50px;
-    background-color: rgb(215, 173, 253);
-    border-radius: 50px;
-}
+    background-color: rgb(201, 154, 245);
 
-footer ul {
+    border-radius: 50px;
+  }
+
+  footer ul {
     gap: 30px;
     list-style: none;
-
-}
-
-/*estilos del main*/
-h1{
-    font-size: 0.5rem;
-    color: midnightblue;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-}
-h2{
-    font-size: 0.5rem;
-    color: midnightblue;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-}
-.contenedor-2m h1{
-    display: grid;
-    font-size: 2rem;
-    color: midnightblue;
-    margin: 10px;
-    grid-column: 1;
-    grid-row: 1;
-    
-
-   text-align: center;
-   }
-   .contenedor-2m{
-    display: grid;
-    grid-template-rows: 0.5fr 1fr 1fr ;
-    grid-template-columns:  repeat(2, 50%) ;
-
-
-    justify-content: center;
-}
-  .tar-j{
-    height: auto;
-  align-items: center;
-   
-
-
-   }
-   .tar-j, img{
-    height: auto;
-    width: 60%;
-    grid-row: 1;
-
-
-   }
-
- .tar-jeta{
-    grid-row: 2;
-    grid-column: 2;
- }
-
-
- .sub-titulo{
-    height: auto;
-    width: auto;
-    display: grid;
-
-    grid-column: span 2;
-    grid-row: 1;
-  
-}
-.ofertas-mas{
-    height: auto;
-    width: auto;
-    display: grid;
-
-    grid-row: 1;
-    grid-column: 2;
-}
-.elegidos{
-    height: auto;
-    width: auto;
-    display: grid;
-
-    grid-row: 1;
-    grid-column: 1;
-}
-
-
-/*estilos de img main*/
-
-
-.contenedor-2i{
-    display: grid;
-    grid-template-rows: 0.2 fr 1fr 1fr ;
-    grid-template-columns:  repeat(2, 50%) ;
-    margin-left: 50px;
-   
-  align-content: center;
-  gap: 20px;
-  
-}
-
-.brasil-morro{
-    height:200px;
-    width: 300px;
-    display: grid;
-    position: relative;
-    overflow: hidden;
-    border-radius: 50px;
-    box-shadow: 5px 1px 12px gray;
-  
-    grid-row: 2;
-    grid-column: 1;
-}
-
-.brasil-morro img{
-    height: 100%;
-    width: 100%;
-   
-}
-.brasil-morro p{
-    font-size: 2rem;
-    color: white;
-    position: absolute;
-    
-    margin-left: 30px;
-    margin-top: 30px;
-}
-.brasil-morro:hover{
-    scale: 1.1;
-    transition: 1s;
-}
-
-.iguazu-cat{
-    height:200px;
-    width: 300px;
-    display: grid;
-    position: relative;
-    overflow: hidden;
-    border-radius: 50px;
-    box-shadow: 5px 1px 12px gray;
-
-    grid-row: 3;
-    grid-column: 2;
-}
-.iguazu-cat p{
-    font-size: 2rem;
-    color: white;
-    position: absolute;
-    
-    margin-left: 30px;
-    margin-top: 30px;
-}
-.iguazu-cat img{
-    height: 100%;
-    width: 100%;
-}
-.iguazu-cat :hover{
-    scale: 1.1;
-    transition: 1s;
-}
-
- .mexico-ceno{
-    height:200px;
-    width: 300px;
-    display: grid;
-    position: relative;
-    overflow: hidden;
-    border-radius: 50px;
-    box-shadow: 5px 1px 12px gray;
-
-    grid-row: 3;
-    grid-column: 1;
-   
-}
-
-.mexico-ceno p{
-font-size: 2rem;
-color: white;
-position: absolute;
-transform: translate(20% ,20%);
-text-shadow: 20px rgba(0,0, 0, 0.8);
-
-
-}
-
-.mexico-ceno:hover{
-    scale: 1.1;
-    transition: 1s;
-}
-
-.mexico-ceno img{
-    height:100%;
-    width: 100%;
-    
-    border-radius: 50px;
-    box-shadow: 5px 8 px 12px grey;
-
-    grid-row: 3;
-    grid-column: 1; 
-}
-
-.video-mexico:hover{
-    scale: 1.1;
-    transition: 1s;
-}
-.video-mexico{
-    display: grid;
-    height:200px;
-    width: 300px;
-    position: relative;
-    overflow: hidden;
-   
-
-    grid-row: 2;
-    grid-column: 2;
-}
-
-.video-mexico iframe{
-    border-radius: 50px;
-    box-shadow: 5px 8 px 12px grey;
-
-}
-
-
-
-
-
-
-
-/*mq para pantallas de escritorio*/
-
-@media screen and (max-width:1024px){
-    body header {
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-.menu{
-    width: 100%;
-    height:100%;
-    display: flex; 
-}
-a{
-    padding: 5px;
-    font-size:0.5rem;
-    color: whitesmoke;
-
-    text-decoration: none
- }
- ul{
-    height: 50%;
-   width: 80%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    position: relative;
-
-    list-style: none;
-    margin: 5px;
-    padding: 0;
-
-
-    gap:1rem;
-    align-items: end;
- }
- .lista:hover{
-    background-color: chocolate;
-    clip-path: circle(30%);
-    transition-property: clip-path;
-
-    transition:1s;
+  }
 }
-.logo{
-    display: flex;
-    position: relative;
-    height: 100px;
-    
-    
-    
-    flex-direction: row;
-    position: relative;
-    
-    }
-    .img{
-        height:70px;
-        width: 70px;
-        margin-left: 20px;
-        margin-top: 10px;
-         
-      
-     }
-     footer {
-        height: 100%;
-        display: grid;
-        grid-area: footer;
-        margin-top: 50px;
-        background-color: rgb(201, 154, 245);
-      
-        border-radius: 50px;
-    }
-    
-    footer ul {
-        gap: 30px;
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    
-    }
-}
-
-
 
 /*mq para pantallas de tablet*/
 
-@media screen and (max-width:768px){
-    body header {
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
+@media screen and (max-width: 768px) {
+  body header {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
-.menu{
+  .menu {
     width: 100%;
-    height:100%;
-    display: flex; 
-}
-a{
+    height: 100%;
+    display: flex;
+  }
+  a {
     padding: 5px;
-    font-size:0.5rem;
+    font-size: 0.5rem;
     color: whitesmoke;
 
-    text-decoration: none
- }
- ul{
+    text-decoration: none;
+  }
+  ul {
     height: 50%;
-   width: 80%;
+    width: 80%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -564,87 +491,82 @@ a{
     margin: 5px;
     padding: 0;
 
-
-    gap:1rem;
+    gap: 1rem;
     align-items: end;
- }
- .lista:hover{
+  }
+  .lista:hover {
     background-color: chocolate;
     clip-path: circle(30%);
     transition-property: clip-path;
 
-    transition:1s;
-}
-.logo{
+    transition: 1s;
+  }
+  .logo {
     display: flex;
     position: relative;
     height: 100px;
-    
-    
-    
+
     flex-direction: row;
     position: relative;
-    
-    }
-    .img{
-        height:70px;
-        width: 70px;
-        margin-left: 20px;
-        margin-top: 10px;
-         
-      
-     }
-     footer {
-        height: 100%;
-        display: grid;
-        grid-area: footer;
-        margin-top: 50px;
-        background-color: rgb(201, 154, 245);
-      
-        border-radius: 50px;
-    }
-    
-    footer ul {
-        gap: 30px;
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    
-    }
-}
+  }
+  .img {
+    height: 70px;
+    width: 70px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  footer {
+    height: 100%;
+    display: grid;
+    grid-area: footer;
+    margin-top: 50px;
+    background-color: rgb(201, 154, 245);
 
+    border-radius: 50px;
+  }
+
+  footer ul {
+    gap: 30px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 
 /*mq para pantallas de celulares*/
 
-@media screen and (max-width:480px){
-    body header {
-       
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
+@media screen and (max-width: 480px) {
+  body header {
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  header {
+    height: auto;
+    width: auto;
+  }
+  .menu {
+    width: auto;
+    height: 100%;
 
-.menu{
-    width: 100%;
-    height:100%;
-    
-  
-    display: flex;  
-}
-nav{
-    
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  nav {
+    width: 100%;
+    height: 100%;
     align-content: end;
-   
-}
-a{
+  }
+  a {
     padding: 5px;
-    font-size:0.5rem;
+    font-size: 0.5rem;
     color: whitesmoke;
 
-    text-decoration: none
- }
- ul{
+    text-decoration: none;
+  }
+  ul {
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -654,41 +576,189 @@ a{
     margin: 5px;
     padding: 0;
 
-
     gap: 1rem;
     align-items: end;
- }
- .logo{
+  }
+  .logo {
     display: flex;
     position: relative;
     height: 100px;
-  
-    
-    
+
     flex-direction: row;
     position: relative;
-    
-    }
-    .img{
-        height:70px;
-        width: 70px;
-        margin-left: 20px;
-        margin-top: 10px;
-         
-      
-     }
-     footer {
-        height: 20vh;
-        display: grid;
-        grid-area: footer;
-        margin-top: 50px;
-        background-color: rgb(201, 154, 245);
-        border-radius: 50px;
-    }
-    
-    footer ul {
-        gap: 30px;
-        list-style: none;
-    
-    }
+  }
+  .logo-1 a .im-logo {
+    height: 100%;
+    width: 100%;
+  
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  footer {
+    height: 100%;
+    display: grid;
+    grid-area: footer;
+    margin-top: 50px;
+    background-color: rgb(201, 154, 245);
+    border-radius: 50px;
+  }
+
+  footer ul {
+    display: flex;
+    font-size: 1rem;
+    gap: 30px;
+    list-style: none;
+  }
+  /*estilos del main*/
+  h1 {
+    margin-top: 20px;
+    font-size: 0.2rem;
+    color: midnightblue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+  }
+  h2 {
+    margin-top: 20px;
+    font-size: 0.5rem;
+    color: midnightblue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+  }
+  /*main del mq*/
+  .contenedor-2i {
+    display: grid;
+    grid-template-rows: 0.2 fr 1fr 1fr;
+    grid-template-columns: repeat(2, 50%);
+    margin-left: 50px;
+
+    align-content: center;
+    gap: 10px;
+  }
+
+  .brasil-morro {
+    height: 70px;
+    width: 140px;
+    display: grid;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50px;
+    box-shadow: 5px 1px 12px gray;
+
+    grid-row: 2;
+    grid-column: 1;
+  }
+
+  .brasil-morro img {
+    height: 100%;
+    width: 100%;
+  }
+  .brasil-morro p {
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  .brasil-morro:hover {
+    scale: 1.1;
+    transition: 1s;
+  }
+
+  .iguazu-cat {
+    height: 70px;
+    width: 140px;
+    display: grid;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50px;
+    box-shadow: 5px 1px 12px gray;
+
+    grid-row: 3;
+    grid-column: 2;
+  }
+  .iguazu-cat p {
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  .iguazu-cat img {
+    height: 100%;
+    width: 100%;
+  }
+  .iguazu-cat :hover {
+    scale: 1.1;
+    transition: 1s;
+  }
+
+  .mexico-ceno {
+    height: 70px;
+    width: 140px;
+    display: grid;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50px;
+    box-shadow: 5px 1px 12px gray;
+
+    grid-row: 3;
+    grid-column: 1;
+  }
+
+  .mexico-ceno p {
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    transform: translate(20%, 20%);
+    text-shadow: 20px rgba(0, 0, 0, 0.8);
+  }
+
+  .mexico-ceno:hover {
+    scale: 1.1;
+    transition: 1s;
+  }
+
+  .mexico-ceno img {
+    height: 100%;
+    width: 100%;
+
+    border-radius: 50px;
+    box-shadow: 5px 8 px 12px grey;
+
+    grid-row: 3;
+    grid-column: 1;
+  }
+
+  .video-mexico:hover {
+    scale: 1.1;
+    transition: 1s;
+  }
+  .video-mexico {
+    display: grid;
+    height: 70px;
+    width: 140px;
+    position: relative;
+    overflow: hidden;
+
+    grid-row: 2;
+    grid-column: 2;
+  }
+
+  .video-mexico iframe {
+    border-radius: 50px;
+    box-shadow: 5px 8 px 12px grey;
+  }
+
+  /*estiilos p*/
+  section p {
+    position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    font-size: 1rem;
+  }
 }
