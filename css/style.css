@@ -49,7 +49,7 @@ header {
   display: grid;
   grid-area: header;
   overflow: hidden;
-  height: 350px;
+  height: 350px;;
   width: 100%;
 
   background: url(../img/banner2.jpg);
@@ -59,11 +59,14 @@ header {
 
 
 div .im-logo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
    position: relative;
    margin: 50px;
     border-radius: 100%;
-    height: 80px;
-    width: 100px;;
+    height: 100px;
+    width: 120px;
    
 
   }
@@ -73,17 +76,16 @@ div .im-logo {
   display: flex;
   flex-direction: column;
   position: relative;
-  padding: 20px;
+  
   height: 200px;
   width: 500px;
 
 
-  align-items: flex-start;
 }
 
 
 div a .im-logo:hover {
-  transform: scale(1,2);
+  transform: scale(1.2);
   transition: 1.2s;
 }
 
@@ -187,6 +189,7 @@ main {
   position: relative;
   display: grid;
   grid-area: main;
+  gap: 20px;
 
   
   justify-items: center;
@@ -236,16 +239,7 @@ h2 {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   }
 
-.contenedor-2m h1 {
-  display: grid;
-  font-size: 2rem;
-  color: midnightblue;
-  margin: 10px;
-  grid-column: 1;
-  grid-row: 1;
 
-  text-align: center;
-}
 .contenedor-2m {
   display: grid;
   grid-template-rows: 0.5fr 1fr 1fr;
@@ -254,11 +248,12 @@ h2 {
   justify-content: center;
 }
 .tar-j {
-  height: auto;
+  height: fit-content;
+  width: fit-content;
   align-items: center;
 }
 .tar-j img {
-    height: auto;
+    height:fit-content;
     width: 30%;
     margin-top: 50px;
    
@@ -266,29 +261,31 @@ h2 {
   }
 
 .tar-jeta {
+  height: fit-content;
+  width: fit-content;
   grid-row: 2;
   grid-column: 2;
 }
 
 .sub-titulo {
-  height: auto;
-  width: auto;
+  height: fit-content;
+  width: fit-content;
   display: grid;
 
   grid-column: span 2;
   grid-row: 1;
 }
 .ofertas-mas {
-  height: auto;
-  width: auto;
+  height: fit-content;
+  width: fit-content;
   display: grid;
 
   grid-row: 1;
   grid-column: 2;
 }
 .elegidos {
-  height: auto;
-  width: auto;
+  height: fit-content;
+  width:fit-content;
   display: grid;
   font-size: 2rem;
 
@@ -482,23 +479,7 @@ section p {
     position: relative;
   }
 
-  footer {
-    height: 100%;
-    display: grid;
-    grid-area: footer;
-    margin-top: 50px;
-    background-color: rgb(201, 154, 245);
 
-    border-radius: 50px;
-  }
-
-  footer ul {
-    gap: 30px;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
 }
 
 /*mq para pantallas de tablet*/
@@ -509,11 +490,12 @@ section p {
     background-repeat: no-repeat;
   }
 
-  .menu {
+  .menu-1 {
     width: 100%;
     height: 100%;
     display: flex;
   }
+
   a {
     padding: 5px;
     font-size: 0.5rem;
@@ -526,7 +508,7 @@ section p {
     width: 80%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     position: relative;
 
     list-style: none;
@@ -557,92 +539,113 @@ section p {
     margin-left: 20px;
     margin-top: 10px;
   }
-  footer {
-    height: 100%;
-    display: grid;
-    grid-area: footer;
-    margin-top: 50px;
-    background-color: rgb(201, 154, 245);
 
-    border-radius: 50px;
-  }
-
-  footer ul {
-    gap: 30px;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
 }
 
 /*mq para pantallas de celulares*/
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px)
+{
   body header {
     background-size: 100%;
     background-repeat: no-repeat;
   }
   header {
-    height: auto;
-    width: auto;
+    height:100%;
+    width:100%;
   }
-  .menu {
-    width: auto;
-    height: 100%;
 
+  div .im-logo {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+     position: relative;
+     margin: 20px;
+      border-radius: 100%;
+      height: 40px;
+      width: 60px;
+    
+    }
+   
+  /*estilos de los iconos 480px*/
+
+.fa-kit-medical {
+  height: 0.5rem;
+  color: #095c25;
+}
+
+.fa-suitcase-rolling {
+  height: 0.5rem;
+}
+
+.fa-bolt {
+  height: 0.5rem;
+}
+.fa-tree-city {
+  height: 0.5rem;
+}
+
+.fa-credit-card {
+  height: 0.5rem;
+}
+.fa-plane{
+  height: 0.5rem;
+}
+
+  .logo-1 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+    height:100px;
+    width: 200px;
+  
+  
+  }
+  .menu-1 {
+    display: flex;
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+
   }
   nav {
-    width: 100%;
-    height: 100%;
+    width: fit-content;
+    display: flex;
     align-content: end;
   }
-  a {
-    padding: 5px;
-    font-size: 0.5rem;
-    color: whitesmoke;
-
-    text-decoration: none;
-  }
+  
   ul {
-    width: 100%;
+    width: fit-content;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    position: relative;
-
+  
     list-style: none;
-    margin: 5px;
-    padding: 0;
-
+    
+  
     gap: 1rem;
     align-items: end;
   }
-
-
+  
+  li {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  
+    width:fit-content;
+    height: fit-content;
+  
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
  
 
-  footer {
-    height: 100%;
-    display: grid;
-    grid-area: footer;
-    margin-top: 50px;
-    background-color: rgb(201, 154, 245);
-    border-radius: 50px;
-  }
-
-  footer ul {
-    display: flex;
-    font-size: 1rem;
-    gap: 30px;
-    list-style: none;
-  }
+ 
   /*estilos del main*/
   h1 {
-    margin-top: 20px;
+   
     font-size: 0.2rem;
     color: midnightblue;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -650,7 +653,7 @@ section p {
       sans-serif;
   }
   h2 {
-    margin-top: 20px;
+   
     font-size: 0.5rem;
     color: midnightblue;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
